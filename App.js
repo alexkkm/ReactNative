@@ -9,6 +9,7 @@
 import React, { Component } from 'react';
 import type {Node} from 'react';
 import {
+  Button,
   SafeAreaView,
   ScrollView,
   StatusBar,
@@ -117,12 +118,25 @@ class TestingPage extends Component{
     this.name="";
   }
 
+  state={blubState:"On"}
+
   render(){
     return(
     <View>
       <Text>
         it is {this.props.name}
       </Text>
+      <Text>
+        Light Bulb is {this.state.blubState}
+      </Text>
+      <Button
+        onPress={()=>{
+          (this.state.blubState==="On")?this.setState({blubState:"Off"}):this.setState({blubState:"On"})
+        }}
+        title={
+          (this.state.blubState==="On")?"Turn Off":"Turn On"
+        }
+      />
     </View>
     );
   }
