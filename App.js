@@ -2,14 +2,14 @@ import React from 'react';
 
 // Navigation
 import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 // Pages for Navigation
 import HomeScreen from './screens/Home';
 import NavigationA from './screens/Navigation/NavigationA';
 import NavigationScreen from './screens/Navigation/NavigationScreen';
 
-const Stack = createStackNavigator();
+const Stack = createNativeStackNavigator();
 
 const NavigatorStack=()=>{
   return (
