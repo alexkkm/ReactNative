@@ -24,6 +24,16 @@ import {
   LearnMoreLinks,
 } from 'react-native/Libraries/NewAppScreen';
 
+// naviga
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+import Home from './screens/Home';
+import Blog from './screens/Blog';
+import BlogDetails from './screens/BlogDetails';
+//
+
+const Stack = createStackNavigator();
+
 const Section = ({children, title}): Node => {
   const isDarkMode = useColorScheme() === 'dark';
   return (
@@ -50,6 +60,47 @@ const Section = ({children, title}): Node => {
   );
 };
 
+function NavStack() {
+  return (
+     <Stack.Navigator
+        screenOptions={{
+          headerTitleAlign: 'center',
+          headerStyle: {
+            backgroundColor: '#621FF7',
+          },
+          headerTintColor: '#fff',
+          headerTitleStyle :{
+            fontWeight: 'bold',
+          },
+        }}
+      >
+      <Stack.Screen 
+        name="Home" 
+        component={Home} 
+        options={{ title: 'Home' }}
+      />
+      <Stack.Screen 
+        name="Blog" 
+        component={Blog} 
+        options={{ title: 'Blog' }}
+      />
+      <Stack.Screen 
+       name="BlogDetails" 
+       component={BlogDetails} 
+       options={{ title: 'Blog Detail' }}
+      />
+    </Stack.Navigator>
+  );
+}
+export default function App() {
+  return (
+    <NavigationContainer>
+      <NavStack />
+    </NavigationContainer>
+  );
+}
+
+/*
 const App: () => Node = () => {
   const isDarkMode = useColorScheme() === 'dark';
 
@@ -143,3 +194,4 @@ class TestingPage extends Component{
 }
 
 export default App;
+*/
