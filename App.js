@@ -7,28 +7,13 @@
  */
 
 import React, { Component } from 'react';
-import type {Node} from 'react';
-import {
-  Button,
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  StyleSheet,
-  Text,
-  useColorScheme,
-  View,
-} from 'react-native';
-
-import {
-  Colors,
-  LearnMoreLinks,
-} from 'react-native/Libraries/NewAppScreen';
 
 // naviga
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import HomeScreen from './screens/Home';
-import NavigationScreen from './screens/NavigationScreen';
+import NavigationA from './screens/Navigation/NavigationA';
+import NavigationScreen from './screens/Navigation/NavigationScreen';
 //
 
 const Stack = createStackNavigator();

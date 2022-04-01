@@ -1,7 +1,23 @@
 import React, { Component } from 'react';
-import { Button, View, Text } from 'react-native';
+import type {Node} from 'react';
+import {
+  Button,
+  SafeAreaView,
+  ScrollView,
+  StatusBar,
+  StyleSheet,
+  Text,
+  useColorScheme,
+  View,
+} from 'react-native';
 
-const Section = ({children, title}): Node => {
+import {
+  Colors,
+  LearnMoreLinks,
+} from 'react-native/Libraries/NewAppScreen';
+
+
+const Section = ({children, title}) => {
   const isDarkMode = useColorScheme() === 'dark';
   return (
     <View style={styles.sectionContainer}>
@@ -34,7 +50,7 @@ const HomeScreen = ({ navigation }) => {
       <Button
         title="Go to Jane's profile"
         onPress={() =>
-          navigation.navigate('Profile', { name: 'Jane' }) // navigate 
+          navigation.navigate('NavigationScreen', { name: 'Jane' }) // navigate 
         }
       />
     </View>
@@ -46,7 +62,7 @@ export default HomeScreen;
 
 
 /*
-const App: () => Node = () => {
+const App: () => {
   const isDarkMode = useColorScheme() === 'dark';
 
   const backgroundStyle = {
