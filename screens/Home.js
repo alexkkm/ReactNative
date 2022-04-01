@@ -1,5 +1,4 @@
-import React, { Component } from 'react';
-import type {Node} from 'react';
+import React from 'react';
 import {
   Button,
   SafeAreaView,
@@ -13,9 +12,7 @@ import {
 
 import {
   Colors,
-  LearnMoreLinks,
 } from 'react-native/Libraries/NewAppScreen';
-
 
 const Section = ({children, title}) => {
   const isDarkMode = useColorScheme() === 'dark';
@@ -43,68 +40,6 @@ const Section = ({children, title}) => {
   );
 };
 
-const HomeScreen = ({ navigation }) => {
-  return (
-    <View>
-      <Text>Home Page</Text>
-      <Button
-        title="Go to Jane's profile"
-        onPress={() =>
-          navigation.navigate('NavigationScreen', { name: 'Jane' }) // navigate 
-        }
-      />
-    </View>
-    
-  );
-};
-
-export default HomeScreen;
-
-
-/*
-const App: () => {
-  const isDarkMode = useColorScheme() === 'dark';
-
-  const backgroundStyle = {
-    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
-  };
-
-  return (
-    <SafeAreaView style={backgroundStyle}>
-      <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-      <ScrollView
-        contentInsetAdjustmentBehavior="automatic"
-        style={backgroundStyle}>
-        <Text>Title of Home Page</Text>
-        <View
-          style={{
-            backgroundColor: isDarkMode ? Colors.black : Colors.white,
-          }}>
-          <Section title="Step One">
-            Edit <Text style={styles.highlight}>App.js</Text> to change this
-            screen and then come back to see your edits.
-          </Section>
-          <Section title="See Your Changes">
-            Double tap <Text style={styles.highlight}>R</Text> on your keyboard to reload your app's code.
-          </Section>
-          <Section title="Debug">
-            Press <Text style={styles.highlight}>Cmd or Ctrl + M</Text> or <Text style={styles.highlight}>Shake</Text> your device to open the React Native debug menu.
-          </Section>
-
-          <Section title="Working Area">
-            <TestingPage name="A"></TestingPage>
-          </Section>
-
-          <Section title="Learn More">
-            Read the docs to discover what to do next:
-          </Section>
-          <LearnMoreLinks />
-        </View>
-      </ScrollView>
-    </SafeAreaView>
-  );
-};
-
 const styles = StyleSheet.create({
   sectionContainer: {
     marginTop: 32,
@@ -124,35 +59,43 @@ const styles = StyleSheet.create({
   },
 });
 
-class TestingPage extends Component{
-  constructor(props){
-    super(props);
-    this.name="";
-  }
+const HomeScreen = ({ navigation }) => {
+  const isDarkMode = useColorScheme() === 'dark';
 
-  state={blubState:"On"}
+  const backgroundStyle = {
+    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
+  };
 
-  render(){
-    return(
-    <View>
-      <Text>
-        it is {this.props.name}
-      </Text>
-      <Text>
-        Light Bulb is {this.state.blubState}
-      </Text>
-      <Button
-        onPress={()=>{
-          (this.state.blubState==="On")?this.setState({blubState:"Off"}):this.setState({blubState:"On"})
-        }}
-        title={
-          (this.state.blubState==="On")?"Turn Off":"Turn On"
-        }
-      />
-    </View>
-    );
-  }
-}
+  return (
+    <SafeAreaView style={backgroundStyle}>
+      <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
+      <ScrollView
+        contentInsetAdjustmentBehavior="automatic"
+        style={backgroundStyle}>
+        <Text style={{fontSize:30}}>Title of Home Page</Text>
+        <View
+          style={{
+            backgroundColor: isDarkMode ? Colors.black : Colors.white,
+          }}>
+          <Section title="Navigation">
+            <View>
+              <Button
+                title="Go to Navigation Screen"
+                onPress={() =>
+                  navigation.navigate('NavigationScreen')
+                }
+              />
+            </View>           
+          </Section>
+          <Section title="Working Area">
+            <View>
 
-export default App;
-*/
+            </View>
+          </Section>
+        </View>
+      </ScrollView>
+    </SafeAreaView>
+  );
+};
+
+export default HomeScreen;
