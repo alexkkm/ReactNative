@@ -26,4 +26,13 @@
 react-native init NameOfTheProject  
 
 執行APP  
-react-native run-android  
+react-native run-android 
+
+
+Setup for ESlint  
+install ESLint Package: npm install -g eslint
+initial ESLint: eslint --init
+install Prettier ESlint VSCode Extension
+install Prettier ESLint package: npm install prettier prettier-eslint --save-dev
+click crtl+shipt+P, and type format document..., select Prettier ESLint
+click crtl+Alt+L in each file

@@ -16,7 +16,6 @@ const TextInputScreen = ({ navigation }) => {
                 <Text>
                     {text}
                 </Text>
-
             </View>
         </ScrollView>
     );
