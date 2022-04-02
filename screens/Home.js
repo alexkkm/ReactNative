@@ -77,6 +77,7 @@ const HomeScreen = ({ navigation }) => {
           style={{
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
           }}>
+
           <Section title="Navigation">
             <View>
               <Button
@@ -87,11 +88,26 @@ const HomeScreen = ({ navigation }) => {
               />
             </View>           
           </Section>
+
+          <Section title="Text Input">
+            <View>
+              <Button
+                title="Go to Text Input Screen"
+                onPress={() =>
+                  navigation.navigate('TextInputScreen')
+                }
+              />
+            </View>           
+          </Section>
+
           <Section title="Working Area">
             <View>
-
+                <Text>
+                  Add dark mode switch button!
+                </Text>
             </View>
           </Section>
+
         </View>
       </ScrollView>
     </SafeAreaView>
