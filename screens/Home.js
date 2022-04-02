@@ -14,7 +14,7 @@ import {
   Colors,
 } from 'react-native/Libraries/NewAppScreen';
 
-const Section = ({children, title}) => {
+const Section = ({ children, title }) => {
   const isDarkMode = useColorScheme() === 'dark';
   return (
     <View style={styles.sectionContainer}>
@@ -72,12 +72,12 @@ const HomeScreen = ({ navigation }) => {
       <ScrollView
         contentInsetAdjustmentBehavior="automatic"
         style={backgroundStyle}>
-        <Text style={{fontSize:30}}>Title of Home Page</Text>
+        <Text style={{ fontSize: 30 }}>Title of Home Page</Text>
         <View
           style={{
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
           }}>
-          
+
           <Section title="Props">
             <View>
               <Button
@@ -86,7 +86,7 @@ const HomeScreen = ({ navigation }) => {
                   navigation.navigate('PropsScreen')
                 }
               />
-            </View>           
+            </View>
           </Section>
 
           <Section title="State">
@@ -97,7 +97,7 @@ const HomeScreen = ({ navigation }) => {
                   navigation.navigate('StateScreen')
                 }
               />
-            </View>           
+            </View>
           </Section>
 
           <Section title="Navigation">
@@ -108,7 +108,7 @@ const HomeScreen = ({ navigation }) => {
                   navigation.navigate('NavigationScreen')
                 }
               />
-            </View>           
+            </View>
           </Section>
 
           <Section title="Text Input">
@@ -119,14 +119,14 @@ const HomeScreen = ({ navigation }) => {
                   navigation.navigate('TextInputScreen')
                 }
               />
-            </View>           
+            </View>
           </Section>
 
           <Section title="Working Area">
             <View>
-                <Text>
-                  Add dark mode switch button!
-                </Text>
+              <Text>
+                Add dark mode switch button!
+              </Text>
             </View>
           </Section>
 

@@ -5,15 +5,15 @@ import { View, Text, ScrollView } from 'react-native';
 const PropsScreen = () => {
     return (
         <ScrollView>
-        <View>
-            <ExampleComponent text="1st"/>
-        </View>
+            <View>
+                <ExampleComponent text="1st" />
+            </View>
         </ScrollView>
     );
 };
 
-const ExampleComponent=(props)=>{
-    return(
+const ExampleComponent = (props) => {
+    return (
         <View>
             <Text>It's the {props.text} Component</Text>
         </View>
