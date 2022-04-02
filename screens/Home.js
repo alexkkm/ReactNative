@@ -77,6 +77,28 @@ const HomeScreen = ({ navigation }) => {
           style={{
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
           }}>
+          
+          <Section title="Props">
+            <View>
+              <Button
+                title="Go to Props Screen"
+                onPress={() =>
+                  navigation.navigate('PropsScreen')
+                }
+              />
+            </View>           
+          </Section>
+
+          <Section title="State">
+            <View>
+              <Button
+                title="Go to State Screen"
+                onPress={() =>
+                  navigation.navigate('StateScreen')
+                }
+              />
+            </View>           
+          </Section>
 
           <Section title="Navigation">
             <View>

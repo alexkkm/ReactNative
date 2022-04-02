@@ -8,7 +8,13 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import HomeScreen from './screens/Home';
 import NavigationA from './screens/Navigation/NavigationA';
 import NavigationScreen from './screens/Navigation/NavigationScreen';
+
+// Pages for Text Input
 import TextInputScreen from './screens/TextInput/TextInput';
+
+// Pages for React Basic
+import PropsScreen from './screens/Basic/Props';
+import StateScreen from './screens/Basic/State';
 
 const Stack = createNativeStackNavigator();
 
@@ -49,7 +55,19 @@ const NavigatorStack=()=>{
       <Stack.Screen   // Text Input
         name="TextInputScreen" 
         component={TextInputScreen} 
-        options={{ title: 'Text InputScreen' }}
+        options={{ title: 'Text Input Screen' }}
+      />
+
+      <Stack.Screen   // Props
+        name="PropsScreen" 
+        component={PropsScreen} 
+        options={{ title: 'Props Screen' }}
+      />
+
+      <Stack.Screen   // State
+        name="StateScreen" 
+        component={StateScreen} 
+        options={{ title: 'State Screen' }}
       />
     </Stack.Navigator>
   );
