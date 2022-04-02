@@ -20,7 +20,7 @@ const StateScreen = () => {
         let timeInfo=new Date();
         let month=((timeInfo.getMonth())+1<10?'0':'')+(timeInfo.getMonth()+1);
         let day=((timeInfo.getDate())<10?'0':'')+(timeInfo.getDate());
-        let hours=((timeInfo.getHours())+8<10?'0':'')+(timeInfo.getHours()+8);
+        let hours=((timeInfo.getHours())<10?'0':'')+(timeInfo.getHours());
         let minutes=((timeInfo.getMinutes())<10?'0':'')+(timeInfo.getMinutes());
         let seconds=((timeInfo.getSeconds())<10?'0':'')+(timeInfo.getSeconds());
         return month+"/"+day+" "+hours+":"+minutes+":"+seconds;
