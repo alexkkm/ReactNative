@@ -133,6 +133,17 @@ const HomeScreen = ({ navigation }) => {
             </View>
           </Section>
 
+          <Section title="Style">
+            <View>
+              <Button
+                title="Go to Style Screen"
+                onPress={() =>
+                  navigation.navigate('StyleScreen')
+                }
+              />
+            </View>
+          </Section>
+
           <Section title="Working Area">
             <View>
               <Text>

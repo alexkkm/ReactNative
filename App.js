@@ -15,7 +15,9 @@ import TextInputScreen from './screens/TextInput/TextInput';
 // Pages for React Basic
 import PropsScreen from './screens/Basic/Props';
 import StateScreen from './screens/Basic/State';
-import PlatfromScreen from './screens/Platform/Platform';
+import PlatformScreen from './screens/Platform/Platform';
+import StyleScreen from './screens/Style/Style';
+import StyleSheetScreen from './screens/Style/StyleSheet';
 
 const Stack = createNativeStackNavigator();
 
@@ -73,8 +75,20 @@ const NavigatorStack = () => {
 
       <Stack.Screen   // Platform
         name="PlatformScreen"
-        component={PlatfromScreen}
+        component={PlatformScreen}
         options={{ title: 'Platform Screen' }}
+      />
+
+
+      <Stack.Screen   // Style
+        name="StyleScreen"
+        component={StyleScreen}
+        options={{ title: 'Style Screen' }}
+      />
+      <Stack.Screen   // StyleSheet
+        name="StyleSheetScreen"
+        component={StyleSheetScreen}
+        options={{ title: 'StyleSheet Screen' }}
       />
     </Stack.Navigator>
   );

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { TextInput, View, Text, ScrollView } from 'react-native';
 
 
-const TextInputScreen = ({ navigation }) => {
+const TextInputScreen = () => {
     const [text, setText] = useState('');
     return (
         <ScrollView>

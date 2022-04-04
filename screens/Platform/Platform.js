@@ -2,7 +2,7 @@ import React from 'react';
 import { Platform, View, Text, ScrollView } from 'react-native';
 
 
-const PlatfromScreen = ({ navigation }) => {
+const PlatformScreen = () => {
     return (
         <ScrollView>
             <View>
@@ -14,4 +14,4 @@ const PlatfromScreen = ({ navigation }) => {
     );
 };
 
-export default PlatfromScreen;
+export default PlatformScreen;
