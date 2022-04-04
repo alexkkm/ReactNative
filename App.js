@@ -7,7 +7,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 // Pages for Navigation
 import HomeScreen from './screens/Home';
 import NavigationA from './screens/Navigation/NavigationA';
-import NavigationScreen from './screens/Navigation/NavigationScreen';
+import NavigationScreen from './screens/Navigation/Navigation';
 
 // Pages for Text Input
 import TextInputScreen from './screens/TextInput/TextInput';
@@ -15,6 +15,7 @@ import TextInputScreen from './screens/TextInput/TextInput';
 // Pages for React Basic
 import PropsScreen from './screens/Basic/Props';
 import StateScreen from './screens/Basic/State';
+import PlatfromScreen from './screens/Platform/Platform';
 
 const Stack = createNativeStackNavigator();
 
@@ -26,7 +27,7 @@ const NavigatorStack = () => {
         headerStyle: {
           backgroundColor: '#007fff', // Azure Blue
         },
-        headerTintColor: '#fff',  // white
+        headerTintColor: '#fff',  // Pure White
         headerTitleStyle: {
           fontWeight: 'bold',
         },
@@ -68,6 +69,12 @@ const NavigatorStack = () => {
         name="StateScreen"
         component={StateScreen}
         options={{ title: 'State Screen' }}
+      />
+
+      <Stack.Screen   // Platform
+        name="PlatformScreen"
+        component={PlatfromScreen}
+        options={{ title: 'Platform Screen' }}
       />
     </Stack.Navigator>
   );

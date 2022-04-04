@@ -122,6 +122,17 @@ const HomeScreen = ({ navigation }) => {
             </View>
           </Section>
 
+          <Section title="Platfrom">
+            <View>
+              <Button
+                title="Go to Platfrom Screen"
+                onPress={() =>
+                  navigation.navigate('PlatformScreen')
+                }
+              />
+            </View>
+          </Section>
+
           <Section title="Working Area">
             <View>
               <Text>
