@@ -5,19 +5,19 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 // Pages for Navigation
-import HomeScreen from './screens/Home';
-import NavigationA from './screens/Navigation/NavigationA';
-import NavigationScreen from './screens/Navigation/Navigation';
+import HomeScreen from './src/Home';
+import NavigationA from './src/Navigation/NavigationA';
+import NavigationScreen from './src/Navigation/Navigation';
 
 // Pages for Text Input
-import TextInputScreen from './screens/TextInput/TextInput';
+import TextInputScreen from './src/TextInput/TextInput';
 
 // Pages for React Basic
-import PropsScreen from './screens/Basic/Props';
-import StateScreen from './screens/Basic/State';
-import PlatformScreen from './screens/Platform/Platform';
-import StyleScreen from './screens/Style/Style';
-import StyleSheetScreen from './screens/Style/StyleSheet';
+import PropsScreen from './src/Basic/Props';
+import StateScreen from './src/Basic/State';
+import PlatformScreen from './src/Platform/Platform';
+import StyleScreen from './src/Style/Style';
+import StyleSheetScreen from './src/Style/StyleSheet';
 
 const Stack = createNativeStackNavigator();
 
