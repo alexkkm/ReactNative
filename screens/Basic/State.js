@@ -3,7 +3,7 @@ import { View, Text, ScrollView, StyleSheet } from 'react-native';
 
 // State: collection of content of parameters
 const StateScreen = () => {
-    const [time, updateTime] = useState(null);
+    const [time, updateTime] = useState(0); //parameters '0' within useState() is the inital value of 'time'
     useEffect(() => { //after the components was build do the followings
         let time = getCurrentTime();
 
