@@ -18,6 +18,7 @@ import StateScreen from './src/Basic/State';
 import PlatformScreen from './src/Platform/Platform';
 import StyleScreen from './src/Style/Style';
 import StyleSheetScreen from './src/Style/StyleSheet';
+import ShareOutwardScreen from './src/ShareOutward/ShareOutward';
 
 const Stack = createNativeStackNavigator();
 
@@ -89,6 +90,11 @@ const NavigatorStack = () => {
         name="StyleSheetScreen"
         component={StyleSheetScreen}
         options={{ title: 'StyleSheet Screen' }}
+      />
+      <Stack.Screen   // ShareOutward
+        name="ShareOutwardScreen"
+        component={ShareOutwardScreen}
+        options={{ title: 'ShareOutward Screen' }}
       />
     </Stack.Navigator>
   );

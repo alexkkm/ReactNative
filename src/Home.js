@@ -144,6 +144,17 @@ const HomeScreen = ({ navigation }) => {
             </View>
           </Section>
 
+          <Section title="Share Outward">
+            <View>
+              <Button
+                title="Go to Share Outward Screen"
+                onPress={() =>
+                  navigation.navigate('ShareOutwardScreen')
+                }
+              />
+            </View>
+          </Section>
+
           <Section title="Working Area">
             <View>
               <Text>
