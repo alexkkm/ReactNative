@@ -155,6 +155,17 @@ const HomeScreen = ({ navigation }) => {
             </View>
           </Section>
 
+          <Section title="DeviceEventEmitter">
+            <View>
+              <Button
+                title="Go to DeviceEventEmitter Screen"
+                onPress={() =>
+                  navigation.navigate('DeviceEventEmitterScreen')
+                }
+              />
+            </View>
+          </Section>
+
           <Section title="Working Area">
             <View>
               <Text>

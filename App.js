@@ -19,6 +19,8 @@ import PlatformScreen from './src/Platform/Platform';
 import StyleScreen from './src/Style/Style';
 import StyleSheetScreen from './src/Style/StyleSheet';
 import ShareOutwardScreen from './src/ShareOutward/ShareOutward';
+import DeviceEventEmitterScreen from './src/DeviceEventEmitter/DeviceEventEmitter';
+import DeviceEventEmitterScreen2 from './src/DeviceEventEmitter/DeviceEventEmitter2';
 
 const Stack = createNativeStackNavigator();
 
@@ -62,17 +64,20 @@ const NavigatorStack = () => {
         options={{ title: 'Text Input Screen' }}
       />
 
+
       <Stack.Screen   // Props
         name="PropsScreen"
         component={PropsScreen}
         options={{ title: 'Props Screen' }}
       />
 
+
       <Stack.Screen   // State
         name="StateScreen"
         component={StateScreen}
         options={{ title: 'State Screen' }}
       />
+
 
       <Stack.Screen   // Platform
         name="PlatformScreen"
@@ -86,15 +91,30 @@ const NavigatorStack = () => {
         component={StyleScreen}
         options={{ title: 'Style Screen' }}
       />
+
+
       <Stack.Screen   // StyleSheet
         name="StyleSheetScreen"
         component={StyleSheetScreen}
         options={{ title: 'StyleSheet Screen' }}
       />
+
+
       <Stack.Screen   // ShareOutward
         name="ShareOutwardScreen"
         component={ShareOutwardScreen}
         options={{ title: 'ShareOutward Screen' }}
+      />
+
+      <Stack.Screen   // DeviceEventEmitter
+        name="DeviceEventEmitterScreen"
+        component={DeviceEventEmitterScreen}
+        options={{ title: 'DeviceEventEmitter Screen' }}
+      />
+      <Stack.Screen
+        name="DeviceEventEmitterScreen2"
+        component={DeviceEventEmitterScreen2}
+        options={{ title: 'DeviceEventEmitter Screen2' }}
       />
     </Stack.Navigator>
   );
