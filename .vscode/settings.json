@@ -1,3 +1,4 @@
 {
-    "java.compile.nullAnalysis.mode": "automatic"
+    "java.compile.nullAnalysis.mode": "automatic",
+    "javascript.validate.enable": false //Disable notice: 型別註解只可用於 TypeScript 檔案中
 }
