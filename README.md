@@ -18,16 +18,19 @@
 
 ## Package Installation:
 
-Install React Native, watchman, flow, react-native-command-line-tool for basic project:
+Install basic packages for creating demo project:  
+
+Packages:  
+react-native, watchman, flow, react-native-command-line-tool  
 
 ```
 npm install -g react-native watchman flow react-native-cli
 ```
 
-Editional packages for new features after demo app:
+Additional packages for new features after demo app (Must be installed to run the dev):
 
 Packages:
-react-native-navigation, react-native-gesture-handler, react-native-reanimated, react-native-screens, react-native-safe-area-context:
+react-native-navigation, react-native-gesture-handler, react-native-reanimated, react-native-screens, react-native-safe-area-context
 
 Commands for installing above packages:
 
