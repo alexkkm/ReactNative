@@ -1,5 +1,8 @@
 # Configuration of Running the App:
 
+## Setup before cloning
+
+安裝 Node.js
 安裝 Java JDK  
 安裝 Android Studio
 
@@ -18,25 +21,45 @@
 
 ## Package Installation:
 
-Install basic packages for creating demo project:  
+### Install basic packages for creating demo project:
 
 Packages:  
-react-native, watchman, flow, react-native-command-line-tool  
+react-native,
+watchman,
+flow,
+react-native-command-line-tool
+
+Commands for installing above packages:
 
 ```
 npm install -g react-native watchman flow react-native-cli
 ```
 
-Additional packages for new features after demo app (Must be installed to run the dev):
+<code>-g stands for globally install</code>
 
-Packages:
-react-native-navigation, react-native-gesture-handler, react-native-reanimated, react-native-screens, react-native-safe-area-context
+### Additional packages for new features after demo app (Must be installed to run the dev):
+
+Packages:  
+react-native-community
+react-native-gesture-handler,
+react-native-reanimated,
+react-native-screens,
+react-native-safe-area-context,
+react-navigation,
 
 Commands for installing above packages:
 
 ```
-npm install --save @react-navigation/native-stack react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context
+npm install @react-navigation/native-stack react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context
 ```
+
+npm install
+react-native-community
+react-native-gesture-handler
+react-navigation
+react-native-reanimated
+react-native-screens
+react-native-safe-area-context
 
 ## Recommended to edit .eslintrc.js to disable annoying notification in vscode:
 
@@ -104,4 +127,7 @@ click crtl+shipt+P, and type format document..., select Prettier ESLint
 OR click crtl+Alt+L in each file
 
 //Use this commend to disable crlf in the PC:
+
+```
 git config --global core.autocrlf false
+```
