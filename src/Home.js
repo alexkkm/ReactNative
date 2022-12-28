@@ -12,6 +12,28 @@ import {
 
 import { Colors } from 'react-native/Libraries/NewAppScreen';
 
+// Customize stylesheet for standardlize the style of this page
+const styles = StyleSheet.create({
+  sectionContainer: {
+    marginTop: 32,
+    paddingHorizontal: 24,
+  },
+  sectionTitle: {
+    fontSize: 24,
+    fontWeight: '600',
+  },
+  sectionDescription: {
+    marginTop: 8,
+    fontSize: 18,
+    fontWeight: '400',
+  },
+  highlight: {
+    fontWeight: '700',
+  },
+});
+
+
+// Customize component for creating a concept area
 const Section = ({ children, title }) => {
   const isDarkMode = useColorScheme() === 'dark';
   return (
@@ -38,24 +60,6 @@ const Section = ({ children, title }) => {
   );
 };
 
-const styles = StyleSheet.create({
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
-  },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
-  },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
-  },
-  highlight: {
-    fontWeight: '700',
-  },
-});
 
 const HomeScreen = ({ navigation }) => {
   const isDarkMode = useColorScheme() === 'dark';
