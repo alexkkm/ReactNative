@@ -19,6 +19,7 @@ import PlatformScreen from './src/Platform/Platform';
 import StyleScreen from './src/Style/Style';
 import StyleSheetScreen from './src/Style/StyleSheet';
 import ShareOutwardScreen from './src/ShareOutward/ShareOutward';
+import SwitchScreen from './src/Basic/Switch';
 
 const Stack = createNativeStackNavigator();
 
@@ -56,6 +57,12 @@ const NavigatorStack = () => {
         name="TextInputScreen"
         component={TextInputScreen}
         options={{ title: 'Text Input Screen' }}
+      />
+
+      <Stack.Screen // Switch
+        name="SwitchScreen"
+        component={SwitchScreen}
+        options={{ title: 'Switch' }}
       />
 
       <Stack.Screen // Props

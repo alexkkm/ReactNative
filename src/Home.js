@@ -116,6 +116,15 @@ const HomeScreen = ({ navigation }) => {
             </View>
           </Section>
 
+          <Section title="Switch">
+            <View>
+              <Button
+                title="Go to Switch Screen"
+                onPress={() => navigation.navigate('SwitchScreen')}
+              />
+            </View>
+          </Section>
+
           <Section title="Platfrom">
             <View>
               <Button

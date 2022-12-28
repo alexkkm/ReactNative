@@ -5,7 +5,7 @@ import { View, Text, ScrollView, StyleSheet } from 'react-native';
 const StateScreen = () => {
     const [time, updateTime] = useState(0); //parameters '0' within useState() is the inital value of 'time'
     useEffect(() => { //after the components was build do the followings
-        let time = getCurrentTime();
+        //let time = getCurrentTime();
 
         const delay = setInterval(() => {   //create a time variable and start timer
             updateTime(time => getCurrentTime()) //when the time limit reached, do this line: updateTime()
